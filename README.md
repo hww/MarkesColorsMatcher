@@ -11,6 +11,7 @@ bash> ./copic_to_touch.rb > copic_to_touch.html
 To see result just open HTML file with your browser. It should look like:
 
 ![Sample](Sample.png)
+*Legend* Inc - _rechargable_, Match% - precents of color match 
 
 ## Note
 * Use for your own risk. I can't guaranty exact colors on paper.
