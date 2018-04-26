@@ -26,10 +26,6 @@ require "./copic"
 require "./touch"
 require "color_diff"
 
-def pow(x,y)
-	x ** y
-end
-	
 # ===========================================
 # CONVERT COLORS
 # ===========================================
