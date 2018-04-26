@@ -8,7 +8,6 @@
 # ================================================================================
 #
 # Generate html file with table of matching Copic colors with Touch Twin colors
-# Can be used for other markers too
 #
 # ================================================================================
 #
@@ -17,7 +16,9 @@
 #
 # ================================================================================
 #
-# NOTE! Use fro your own risk. I can't guaranty exact colors on paper.
+# Note: 
+#       * Use fro your own risk. I can't guaranty exact colors on paper.
+#       * Can be used for other markers too
 #
 # ================================================================================
  
