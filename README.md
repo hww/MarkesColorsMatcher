@@ -32,7 +32,7 @@ Full table with compact format
 
 ## Rechargeable version of Touch Twin only
 
-The next table include only rechargeable TouchTwin version.
+The next table includes only rechargeable TouchTwin version.
 
 ![Copic to Touch Table (Ink Only)](copic_to_touch_colors_compact_inkonly.jpg)
 
