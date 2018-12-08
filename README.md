@@ -37,5 +37,6 @@ The next table include only rechargeable TouchTwin version.
 ![Copic to Touch Table (Ink Only)](copic_to_touch_colors_compact_inkonly.jpg)
 
 ## Note
+
 * Use at your own risk. I can't guarantee the exact colors that will apear on paper.
-* The tool can be used for other markers too
+* The tool can be used for other markers, too.
