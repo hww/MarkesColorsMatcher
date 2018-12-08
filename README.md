@@ -10,7 +10,7 @@ To make full table
 bash> ./copic_to_touch.rb > copic_to_touch.html
 ```
 
-To make table with only rechargable inks
+To make table with only rechargeable inks
 
 ```bash
 bash> ./copic_to_touch.rb inkonly > copic_to_touch.html
@@ -30,9 +30,9 @@ Full table with compact format
 
 ![Copic to Touch Table](copic_to_touch_colors_compact.jpg)
 
-## Rechargable version of Touch Twin only
+## Rechargeable version of Touch Twin only
 
-The next table include only rechargable TouchTwin version.
+The next table include only rechargeable TouchTwin version.
 
 ![Copic to Touch Table (Ink Only)](copic_to_touch_colors_compact_inkonly.jpg)
 
