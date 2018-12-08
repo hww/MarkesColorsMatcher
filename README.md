@@ -1,6 +1,6 @@
 # MarkesColorsMatcher
 
-Generator of color matching tables between: Copic and Touch Twin markes for artists.
+Generator of color matching tables between: Copic and Touch Twin markers for artists.
 
 ## Usage:
 
