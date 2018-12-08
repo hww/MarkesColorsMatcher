@@ -57,7 +57,16 @@ def rgb_match?(c1, c2)
 
 end
 
+# ===========================================
+# Check if any of touch pens has ink
+# ===========================================
 
+def has_ink_touch(touch_list)
+    touch_list.each do |t|
+        return true if t[:ink]
+    end
+    return false
+end
 
 # ===========================================
 # PROCESS COPIC COLORS
@@ -183,41 +192,43 @@ Copic.families.each do |f|
         if (id.include?(f))
         then
             matches = c[:touch_list].size
-
             if (matches > 0)
             then
-                puts "<tr>"
-                puts c[:ink] ? "<td>+</td>" : "<td></td>"
-                puts "<td align=\"center\" style=\"background-color:#{c[:color]};color:#{c[:text]};font-size:0.8em;span:2px\">#{c[:id]}</td>"
-
-                add_row_beg = false
-                add_row_end = true
-
-                c[:touch_list].each do |t|
-                    if not @ink_only or t[:ink]
-                    then
-                        if (add_row_beg)
-                        then
-                            puts "<tr>"
-                            puts "<td></td>"
-                            puts "<td></td>"
-                        end
-                        puts "<td style=\"font-size:0.8em\">#{(t[:perc]).to_i}%</td>"
-                        puts "<td align=\"center\" style=\"background-color:#{t[:color]};color:#{t[:text]};font-size:0.8em;span:2px\">#{t[:id]}</td>"
-                        puts t[:ink] ? "<td>+</td>" : "<td></td>"
-                        puts "</tr>"
-                        add_row_beg = true
-                        add_row_end = false
-                    end
-                end
-                if (add_row_end)
+                if not @ink_only or has_ink_touch(c[:touch_list])
                 then
-                    puts "<td></td>"
-                    puts "<td></td>"
-                    puts "<td></td>"
-                    puts "</tr>"
+                    puts "<tr>"
+                    puts c[:ink] ? "<td>+</td>" : "<td></td>"
+                    puts "<td align=\"center\" style=\"background-color:#{c[:color]};color:#{c[:text]};font-size:0.8em;span:2px\">#{c[:id]}</td>"
+
+                    add_row_beg = false
+                    add_row_end = true
+
+                    c[:touch_list].each do |t|
+                        if not @ink_only or t[:ink]
+                        then
+                            if (add_row_beg)
+                            then
+                                puts "<tr>"
+                                puts "<td></td>"
+                                puts "<td></td>"
+                            end
+                            puts "<td style=\"font-size:0.8em\">#{(t[:perc]).to_i}%</td>"
+                            puts "<td align=\"center\" style=\"background-color:#{t[:color]};color:#{t[:text]};font-size:0.8em;span:2px\">#{t[:id]}</td>"
+                            puts t[:ink] ? "<td>+</td>" : "<td></td>"
+                            puts "</tr>"
+                            add_row_beg = true
+                            add_row_end = false
+                        end
+                    end
+                    if (add_row_end)
+                    then
+                        puts "<td></td>"
+                        puts "<td></td>"
+                        puts "<td></td>"
+                        puts "</tr>"
+                    end
+                    puts " "
                 end
-                puts " "
             end
         end
     end
