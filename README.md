@@ -22,7 +22,7 @@ To see result just open HTML file with your browser. It should look like:
 
 ![Sample](Sample.png)
 
-*Legend:* *Inc* - _rechargable_, *Match%* - precents of color match 
+*Legend:* *Inc* - _rechargeable_, *Match%* - precents of color match 
 
 ## Full table in compact format
 
